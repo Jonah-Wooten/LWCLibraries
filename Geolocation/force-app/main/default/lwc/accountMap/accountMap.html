@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Account Map" icon-name="action:map" size="small">
+        <template if:true={switchTemplate}>
+            <lightning-map
+                zoom-level={zoom}
+                center={center}
+                map-markers={markers}
+                onmarkerselect={handleMarkerSelect}
+                selected-marker-value={selectedMarkerValue}
+                markers-title="Accounts">
+            </lightning-map>
+        </template>
+        <template if:false={switchTemplate}>
+            <lightning-map
+                zoom-level={zoom}
+                center={center}
+                map-markers={markers}
+                onmarkerselect={handleMarkerSelect}
+                selected-marker-value={selectedMarkerValue}
+                markers-title="Accounts">
+            </lightning-map>
+        </template>
+     </lightning-card>
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Account List" icon-name="standard:account" size="small">
+        <lightning-datatable
+                key-field="id"
+                data={accounts}
+                columns={columns}
+                onrowselection={getSelectedRows}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

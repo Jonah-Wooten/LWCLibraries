@@ -1,0 +1,25 @@
+<template>
+    <div data-id="AccountLocator">
+        <lightning-layout multiple-rows="true">
+            <lightning-layout-item padding="around-small" size="12">
+                <div class="slds-box slds-theme_default">
+                    <c-account-search></c-account-search>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item padding="around-small" size="12">
+                <lightning-layout>
+                    <lightning-layout-item padding="around-small" size="6">
+                        <div class="slds-box slds-theme_default">
+                            <c-account-list></c-account-list>
+                        </div>
+                    </lightning-layout-item>
+                    <lightning-layout-item padding="around-small" size="6">
+                        <div class="slds-box slds-theme_default">
+                           <c-account-map></c-account-map>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>
