@@ -1,0 +1,41 @@
+.blue-box {
+    background-color: #08a7da;
+    height: 30px;
+    width:100px;
+    color: white;
+    font-family: Tahoma;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 15px;
+}
+ 
+.card-height{
+    height: 800px;
+    width: 900px;
+    margin-left:150px;
+}
+.textSize{
+    font-family: Tahoma;
+    font-size: 20px;
+    font-weight: 500;
+}
+.topMargin{
+    margin-top:20px
+}
+.box-width{
+    width:300px
+}
+.features-css{
+    margin-left: 50px;
+}
+.text-size-city{
+    font-family: Tahoma;
+    font-size:40px;
+    font-weight: 500;
+}
+.featurestopMargin{
+    margin-top: 113px;
+}
+.iconSize{
+    padding:unset;
+}

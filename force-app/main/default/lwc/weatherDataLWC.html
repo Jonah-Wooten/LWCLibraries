@@ -1,0 +1,88 @@
+<template>
+
+    <lightning-layout>
+        <lightning-layout-item size="6" medium-device-size="8" padding="around-small">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-3">
+                    <span>
+                        <span onkeypress={callKeyUp}>
+                            <lightning-input class="box-width" type="text" label="Add Location" name="searchText">
+                            </lightning-input>
+                        </span>
+                        <lightning-map class="topMargin" map-markers={mapMarkers} zoom-level={zoomLevel}>
+                        </lightning-map>
+                    </span>
+                </div>
+                <div class="slds-col slds-size_1-of-3 features-css">
+                    <lightning-card class="card-height text-size-city" title={getCityName}></lightning-card>
+                    <lightning-card class="textSize" icon-name="standard:topic" title="Current Temperature">
+                        <div class="slds-align_absolute-center blue-box">
+                            <template if:true={result}>
+                                {getConvertedTemp}
+                            </template>
+                        </div>
+                    </lightning-card>
+                    <lightning-card class="textSize" icon-name="utility:flow" title="Current Wind Speed">
+                        <div class="slds-align_absolute-center blue-box">
+                            <template if:true={result}>
+                                {getCurrentWindSpeed}
+                            </template>
+                        </div>
+                    </lightning-card>
+
+                    <lightning-card class="textSize" icon-name="standard:calibration" title="Precipitation">
+                        <div class="slds-align_absolute-center blue-box">
+                            <template if:true={result}>
+                                {getCurrentPrecip}
+                            </template>
+                        </div>
+                    </lightning-card>
+                </div>
+                <div class="slds-col slds-size_1-of-3 featurestopMargin">
+                    <lightning-card class="textSize" icon-name="custom:custom3" title="UV Index">
+                        <div class="slds-align_absolute-center blue-box">
+                            <template if:true={result}>
+                                {getCurrentUv}
+                            </template>
+                        </div>
+                    </lightning-card>
+                    <!--<lightning-card class="textSize" icon-name="custom:custom3" title="Sunrise">
+                            <div class="slds-align_absolute-center blue-box">
+                                <template if:true={result}>
+                                    {getSunrise}
+                                </template>
+                            </div>
+                        </lightning-card>
+                        <lightning-card class="textSize" icon-name="custom:custom3" title="Sunset">
+                            <div class="slds-align_absolute-center blue-box">
+                                <template if:true={result}>
+                                    {getSunset}
+                                </template>
+                            </div>
+                        </lightning-card>-->
+                    <lightning-card class="textSize" icon-name="standard:invocable_action" title=" Cloud coverage ">
+                        <div class="slds-align_absolute-center blue-box">
+                            <template if:true={result}>
+                                {getClouds}
+                            </template>
+                        </div>
+                    </lightning-card>
+                    <!--<lightning-card class="textSize" icon-name="custom:custom3" title="Visibility">
+                            <div class="slds-align_absolute-center blue-box">
+                                <template if:true={result}>
+                                    {getVisibility}
+                                </template>
+                            </div>
+                        </lightning-card>-->
+                    <lightning-card class="textSize iconSize" icon-name="utility:spinner" title="Snowfall">
+                        <div class="slds-align_absolute-center blue-box">
+                            <template if:true={result}>
+                                {getSnowfall}
+                            </template>
+                        </div>
+                    </lightning-card>
+                </div>
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
