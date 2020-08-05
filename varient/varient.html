@@ -1,0 +1,110 @@
+<!--  Basic Lightnint Web Component Buttons -->
+<template>
+    <lightning-button variant="base" label="base" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="neutral" label="neutral" onclick={handleClick} class="slds-m-left_x-small">>
+    </lightning-button>
+    <lightning-button variant="brand" label="brand" onclick={handleClick} class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="brand-outline" label="brand-outline" onclick={handleClick} class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="destructive" label="destructive" onclick={handleClick} class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="destructive-text" label="destructive-text" onclick={handleClick}
+        class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="success" label="Success" onclick={handleClick} class="slds-m-left_x-small">
+    </lightning-button>
+    <br></br>
+    <!--  Basic LWC with Icons Buttons -->
+    <lightning-button variant="base" label="Snap" icon-name="action:add_photo_video" onclick={handleClick}
+        class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="Neutral" label="Love" icon-name="custom:custom1" onclick={handleClick}
+        class="slds-m-left_x-small">>
+    </lightning-button>
+    <lightning-button variant="brand" label="Download" icon-name="utility:download" onclick={handleClick}
+        class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="brand-outline" label="Plug up" icon-name="standard:apex_plugin" onclick={handleClick}
+        class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="destructive" label="HappY" icon-name="utility:emoji" onclick={handleClick}
+        class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="destructive-text" label="Trash" icon-name="utility:delete" onclick={handleClick}
+        class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="success" label="Success" icon-name="action:flow" icon-position="right"
+        onclick={handleClick} class="slds-m-left_x-small">
+    </lightning-button>
+    <br> </br>
+    <!--  LWC with Buttons that have been disabled-->
+    <lightning-button variant="base" label="Base" onclick={handleClick} disabled class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="Neutral" label="Neutral" onclick={handleClick} disabled class="slds-m-left_x-small">>
+    </lightning-button>
+    <lightning-button variant="brand" label="Brand" onclick={handleClick} disabled class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="brand-outline" label="Brand Outline" onclick={handleClick} disabled
+        class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="destructive" label="Destructive" onclick={handleClick} disabled
+        class="slds-m-left_x-small">
+    </lightning-button>
+    <lightning-button variant="destructive-text" label="Destructive Text" onclick={handleClick} disabled
+        class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="success" label="Success" onclick={handleClick} disabled class="slds-m-left_x-small">
+    </lightning-button>
+    <br> </br>
+    <!--  LWC Buttons with inverse functionality that is shown when you hover over the button-->
+    <div class="slds-p-around_medium lgc-bg-inverse">
+        <lightning-button variant="inverse" label="Snap" icon-name="action:add_photo_video" onclick={handleClick}
+            class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="inverse" label="Love" icon-name="custom:custom1" onclick={handleClick}
+            class="slds-m-left_x-small">>
+        </lightning-button>
+        <lightning-button variant="inverse" label="Download" icon-name="utility:download" onclick={handleClick}
+            class="slds-m-left_x-small">
+        </lightning-button>
+        <lightning-button variant="inverse" label="Plug up" icon-name="standard:apex_plugin" onclick={handleClick}
+            class="slds-m-left_x-small">
+        </lightning-button>
+        <lightning-button variant="inverse" label="HappY" icon-name="utility:emoji" onclick={handleClick}
+            class="slds-m-left_x-small">
+        </lightning-button>
+        <lightning-button variant="inverse" label="Trash" icon-name="utility:delete" onclick={handleClick}
+            class="slds-m-left_x-small"></lightning-button>
+        <lightning-button variant="inverse" label="Success" icon-name="action:flow" icon-position="right"
+            onclick={handleClick} class="slds-m-left_x-small">
+        </lightning-button>
+    </div>
+    <br> </br>
+    <!--  Custom LWC  Buttons with custom icons using button class and image tag-->
+    <button class="slds-button ytp-button">
+        <p class="ytp-button-title left">Nexient</p>
+        <span class="slds-avatar slds-avatar_x-small">
+            <img src={nexientJpeg} alt="meaningful text">
+        </span>
+    </button>
+    <button class="slds-button ztp-button">
+        <p class="ztp-button-title left">Nexient</p>
+        <span class="slds-avatar slds-avatar_x-small">
+            <img src={nexientJpeg} alt="meaningful text">
+        </span>
+    </button>
+    <button class="slds-button wtp-button">
+        <p class="wtp-button-title left">Nexient</p>
+        <span class="slds-avatar slds-avatar_x-small">
+            <img src={nexientJpeg} alt="meaningful text">
+        </span>
+    </button>
+    <button class="slds-button utp-button">
+        <p class="utp-button-title left">Nexient</p>
+        <span class="slds-avatar slds-avatar_x-small">
+            <img src={nexientJpeg} alt="meaningful text">
+        </span>
+    </button>
+    <!--  The output of the Button that is pressed-->
+    <div class="slds-m-vertical_medium">
+        <p>The label of the button that was clicked is: <span
+                class="slds-text-heading_small">{clickedButtonLabel}</span></p>
+    </div>
+</template>

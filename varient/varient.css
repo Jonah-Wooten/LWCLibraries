@@ -1,0 +1,39 @@
+.ytp-button {
+    border-color: #e9dd9e;
+    border: 10px;
+    color: rgb(46, 137, 206);
+    background-color: white;
+    margin: 4px;
+    padding: 15px 32px;
+    
+}
+.ztp-button {
+    border-color: #984238;
+    border: 10px;
+    color: rgb(46, 137, 206);
+    background-color: white;
+    margin: 4px;
+    padding: 15px 32px;
+    
+}
+.wtp-button {
+    border-color: #168f20;
+    border: 1px;
+    color: rgb(46, 137, 206);
+    background-color: white;
+    margin: 4px;
+    padding: 15px 32px;
+    
+}
+.utp-button {
+    border-color: #3f82df;
+    border: 1px;
+    color: rgb(46, 137, 206);
+    background-color: white;
+    margin: 4px;
+    padding: 15px 32px;
+    
+}
+.lgc-bg-inverse {
+    background-color: rgb(22, 50, 92);
+}
